@@ -37,17 +37,22 @@ button:hover {
 
 <h1>Kpop Dominant Archetype Quiz</h1>
 
-<p>
-Discover which dominant archetypes you are psychologically compatible with.
-</p>
-
 <button onclick="startQuiz()">Start Quiz</button>
 
-<script>
-function startQuiz(){
-  alert("Quiz engine coming next!");
-}
-</script>
+<div id="quiz" style="display:none; margin-top:30px;">
+  <h2 id="question"></h2>
+
+  <button onclick="answer(1)">Disagree</button>
+  <button onclick="answer(2)">Neutral</button>
+  <button onclick="answer(3)">Agree</button>
+</div>
+
+<div id="results" style="display:none; margin-top:40px;">
+  <h2>Your Trait Scores</h2>
+  <pre id="resultText"></pre>
+</div>
+
+<script src="quiz.js"></script>
 
 </body>
 </html>
