@@ -42,23 +42,104 @@ const questions = [
     trait: "authority"
   },
   {
+    text: "I respond well when someone takes confident leadership.",
+    trait: "authority"
+  },
+  {
+    text: "Clear roles make a dynamic feel more secure to me.",
+    trait: "authority"
+  },
+  {
+    text: "I feel more comfortable when someone else sets the tone or structure.",
+    trait: "authority"
+  },
+
+  {
     text: "I enjoy doing things that make a partner feel valued.",
     trait: "service"
   },
+  {
+    text: "Helping or pleasing a partner can feel rewarding in itself.",
+    trait: "service"
+  },
+  {
+    text: "Acts of devotion feel meaningful to me.",
+    trait: "service"
+  },
+  {
+    text: "I often show affection through effort and helpfulness.",
+    trait: "service"
+  },
+
   {
     text: "Praise strongly affects my motivation.",
     trait: "validation"
   },
   {
+    text: "Feeling appreciated matters a lot to me in close relationships.",
+    trait: "validation"
+  },
+  {
+    text: "Compliments can stay with me for a long time.",
+    trait: "validation"
+  },
+  {
+    text: "Approval from someone I care about can feel intensely rewarding.",
+    trait: "validation"
+  },
+
+  {
     text: "Rules can make a dynamic feel meaningful.",
     trait: "discipline"
   },
+  {
+    text: "Clear correction can help me improve when I trust the person giving it.",
+    trait: "discipline"
+  },
+  {
+    text: "Structure often feels reassuring rather than restrictive.",
+    trait: "discipline"
+  },
+  {
+    text: "Accountability can make a relationship dynamic feel deeper.",
+    trait: "discipline"
+  },
+
   {
     text: "Anticipation is often more exciting than immediate reward.",
     trait: "tension"
   },
   {
+    text: "Waiting can intensify an experience for me.",
+    trait: "tension"
+  },
+  {
+    text: "Psychological buildup matters a lot to me.",
+    trait: "tension"
+  },
+  {
+    text: "Delayed gratification can feel especially powerful.",
+    trait: "tension"
+  },
+
+  {
     text: "Playful teasing usually doesn't bother me.",
+    trait: "ego"
+  },
+  {
+    text: "I can handle being emotionally challenged in the right dynamic.",
+    trait: "ego"
+  },
+  {
+    text: "A little embarrassment can sometimes feel exciting rather than upsetting.",
+    trait: "ego"
+  },
+  {
+    text: "I do not always need to feel composed or in control.",
+    trait: "ego"
+  },
+  {
+    text: "Psychological vulnerability can sometimes make an experience feel more intense.",
     trait: "ego"
   }
 ];
