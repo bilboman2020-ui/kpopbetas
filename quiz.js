@@ -177,7 +177,9 @@ function startQuiz() {
 
 function showQuestion() {
   const q = questions[currentQuestion];
-  document.getElementById("question").innerText = q.text;
+  document.getElementById("question").innerText =
+"Question " + (currentQuestion + 1) + " / " + questions.length + " — " + q.text;
+
 }
 
 function answer(value) {
@@ -199,12 +201,19 @@ function showResults() {
 
   let results = [];
 
-  archetypes.forEach(a => {
-    let score = 0;
+archetypes.forEach(a => {
 
-    for (let trait in scores) {
-      score += Math.abs(scores[trait] - a.traits[trait]);
-    }
+let score = 0;
+
+for(let trait in scores){
+
+let normalized = scores[trait] / 5; 
+// convert roughly back to 1–3 scale
+
+score += Math.abs(normalized - a.traits[trait]);
+
+}
+
 
     results.push({
       name: a.name,
