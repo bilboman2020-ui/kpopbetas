@@ -75,6 +75,9 @@ let scores = {
 };
 
 function startQuiz() {
+
+  document.querySelector("button").style.display = "none";
+
   currentQuestion = 0;
   scores = {
     authority: 0,
