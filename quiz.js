@@ -1,3 +1,48 @@
+const archetypes = [
+
+{
+name: "Keyholder Sovereign",
+activity: "Chastity Control",
+persona: "Ice Queen Dominant",
+idols: ["Jennie", "Karina", "Krystal"],
+traits: {authority:3, service:1, validation:1, discipline:2, tension:3, ego:2}
+},
+
+{
+name: "The Headmistress",
+activity: "Caning / Formal Discipline",
+persona: "Strict Teacher",
+idols: ["Irene", "Jisoo", "Soyeon"],
+traits: {authority:3, service:1, validation:1, discipline:3, tension:1, ego:2}
+},
+
+{
+name: "Velvet Temptress",
+activity: "Teasing / Denial",
+persona: "Playful Seductress",
+idols: ["Sana", "Ningning", "Joy"],
+traits: {authority:1, service:1, validation:2, discipline:1, tension:3, ego:3}
+},
+
+{
+name: "Sadistic Trainer",
+activity: "Paddle / Physical Training",
+persona: "Intense Dominant",
+idols: ["Lisa", "Hyuna", "Seulgi"],
+traits: {authority:2, service:1, validation:1, discipline:3, tension:2, ego:2}
+},
+
+{
+name: "The Idol Princess",
+activity: "Worship / Devotion",
+persona: "Untouchable Idol",
+idols: ["Wonyoung", "Tzuyu", "Suzy"],
+traits: {authority:2, service:3, validation:3, discipline:1, tension:2, ego:1}
+}
+
+];
+
+
 const questions = [
 {
 text: "I prefer relationships where expectations are clearly defined.",
@@ -69,10 +114,46 @@ showQuestion();
 function showResults(){
 
 document.getElementById("quiz").style.display = "none";
-
 document.getElementById("results").style.display = "block";
 
-document.getElementById("resultText").innerText =
-JSON.stringify(scores,null,2);
+let results = [];
+
+archetypes.forEach(a => {
+
+let score = 0;
+
+for(let trait in scores){
+score += Math.abs(scores[trait] - a.traits[trait]);
+}
+
+results.push({
+name: a.name,
+activity: a.activity,
+persona: a.persona,
+idols: a.idols,
+score: score
+});
+
+});
+
+results.sort((a,b)=>a.score-b.score);
+
+let top = results.slice(0,5);
+
+let output = "";
+
+top.forEach(r => {
+
+output += `
+<h3>${r.name}</h3>
+<p><b>Activity:</b> ${r.activity}</p>
+<p><b>Kpop Persona:</b> ${r.persona}</p>
+<p><b>Idol Examples:</b> ${r.idols.join(", ")}</p>
+<hr>
+`;
+
+});
+
+document.getElementById("resultText").innerHTML = output;
 
 }
