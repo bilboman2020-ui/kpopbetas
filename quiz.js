@@ -1,40 +1,111 @@
 const archetypes = [
   {
     name: "Keyholder Sovereign",
-    activity: "Chastity Control",
+    activity: "Chastity / control of desire",
     persona: "Ice Queen Dominant",
     idols: ["Jennie", "Karina", "Krystal"],
-    traits: { authority: 3, service: 1, validation: 1, discipline: 2, tension: 3, ego: 2 }
-  },
-  {
-    name: "The Headmistress",
-    activity: "Caning / Formal Discipline",
-    persona: "Strict Teacher",
-    idols: ["Irene", "Jisoo", "Soyeon"],
-    traits: { authority: 3, service: 1, validation: 1, discipline: 3, tension: 1, ego: 2 }
+    traits: { authority: 3, service: 1, validation: 1, discipline: 2, tension: 3, ego: 1 }
   },
   {
     name: "Velvet Temptress",
-    activity: "Teasing / Denial",
-    persona: "Playful Seductress",
-    idols: ["Sana", "Ningning", "Joy"],
-    traits: { authority: 1, service: 1, validation: 2, discipline: 1, tension: 3, ego: 3 }
+    activity: "Tease & denial",
+    persona: "Seductive Siren",
+    idols: ["Sunmi", "Joy", "Ningning"],
+    traits: { authority: 1, service: 1, validation: 2, discipline: 1, tension: 3, ego: 2 }
   },
   {
-    name: "Sadistic Trainer",
-    activity: "Paddle / Physical Training",
-    persona: "Intense Dominant",
-    idols: ["Lisa", "Hyuna", "Seulgi"],
-    traits: { authority: 2, service: 1, validation: 1, discipline: 3, tension: 2, ego: 2 }
+    name: "Ice Monarch",
+    activity: "Ignoring / cold control",
+    persona: "Cold Beauty",
+    idols: ["Jessica Jung", "Kazuha", "Giselle"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 1, tension: 3, ego: 1 }
   },
   {
-    name: "The Idol Princess",
-    activity: "Worship / Devotion",
-    persona: "Untouchable Idol",
-    idols: ["Wonyoung", "Tzuyu", "Suzy"],
-    traits: { authority: 2, service: 3, validation: 3, discipline: 1, tension: 2, ego: 1 }
+    name: "Headmistress",
+    activity: "Caning / strict discipline",
+    persona: "Elegant Authority",
+    idols: ["Irene", "Bona", "Arin"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 3, tension: 1, ego: 2 }
+  },
+  {
+    name: "Stern Enforcer",
+    activity: "Whipping / severe discipline",
+    persona: "Dark Commander",
+    idols: ["Jihyo", "Yunjin", "Sihyeon"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 3, tension: 1, ego: 3 }
+  },
+  {
+    name: "Rule Keeper",
+    activity: "Paddle / rule-based correction",
+    persona: "Tactical Captain",
+    idols: ["Yuri", "Hayoung", "J"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 3, tension: 1, ego: 1 }
+  },
+  {
+    name: "Moral Judge",
+    activity: "Forced apology / accountability",
+    persona: "Regal Arbiter",
+    idols: ["Jisoo", "Yoona", "Sakura"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 3, tension: 1, ego: 2 }
+  },
+  {
+    name: "Behavior Trainer",
+    activity: "Obedience tasks / training",
+    persona: "Commanding Instructor",
+    idols: ["BoA", "Kwon Eunbi", "Yeoreum"],
+    traits: { authority: 3, service: 2, validation: 1, discipline: 3, tension: 1, ego: 1 }
+  },
+  {
+    name: "Devotion Collector",
+    activity: "Service devotion",
+    persona: "Elegant Empress",
+    idols: ["IU", "Suzy", "Miyeon"],
+    traits: { authority: 2, service: 3, validation: 2, discipline: 1, tension: 1, ego: 1 }
+  },
+  {
+    name: "Rewarding Queen",
+    activity: "Praise / reward dynamic",
+    persona: "Warm Mentor",
+    idols: ["Taeyeon", "Solar", "Seulgi"],
+    traits: { authority: 2, service: 2, validation: 3, discipline: 1, tension: 1, ego: 1 }
+  },
+  {
+    name: "Admiration Empress",
+    activity: "Forced compliments / admiration rituals",
+    persona: "Glamour Queen",
+    idols: ["Sana", "Winter", "Yuna"],
+    traits: { authority: 2, service: 2, validation: 3, discipline: 1, tension: 2, ego: 1 }
+  },
+  {
+    name: "Mischief Duchess",
+    activity: "Playful teasing / humiliation",
+    persona: "Playful Villainess",
+    idols: ["Hwasa", "Hyuna", "Lisa"],
+    traits: { authority: 1, service: 1, validation: 1, discipline: 1, tension: 3, ego: 3 }
+  },
+  {
+    name: "Psychological Duelist",
+    activity: "Verbal domination / wit",
+    persona: "Sharp-Tongued Rapper",
+    idols: ["Ryujin", "Moonbyul", "Yeeun"],
+    traits: { authority: 2, service: 1, validation: 1, discipline: 1, tension: 2, ego: 3 }
+  },
+  {
+    name: "Ego Breaker",
+    activity: "Ego challenge / humiliation",
+    persona: "Fierce Commander",
+    idols: ["CL", "Yeji", "Soyeon"],
+    traits: { authority: 3, service: 1, validation: 1, discipline: 2, tension: 2, ego: 3 }
+  },
+  {
+    name: "Court Empress",
+    activity: "Ritual submission / kneeling",
+    persona: "Royal Princess",
+    idols: ["Wonyoung", "Tzuyu", "Minju"],
+    traits: { authority: 3, service: 2, validation: 2, discipline: 2, tension: 1, ego: 1 }
   }
 ];
+
 
 const questions = [
   {
