@@ -29,6 +29,36 @@ button {
 button:hover {
   background: #e73370;
 }
+  #choiceContainer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.choice-card {
+  width: 320px;
+  min-height: 180px;
+  padding: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  white-space: normal;
+  text-align: left;
+  background: #1d1d1d;
+  border: 2px solid #333;
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.choice-card:hover {
+  background: #2a2a2a;
+  border-color: #ff4081;
+  transform: translateY(-2px);
+}
 </style>
 
 </head>
