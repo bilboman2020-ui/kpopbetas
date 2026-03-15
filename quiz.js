@@ -168,109 +168,144 @@ const archetypes = [
 
 const questions = [
   {
-    text: "I prefer relationships where expectations are clearly defined.",
-    trait: "authority"
+    text: "Which feels more appealing?",
+    optionA: "Someone confidently directing the dynamic",
+    optionB: "Showing devotion through effort and helpfulness",
+    traitA: "authority",
+    traitB: "service"
   },
   {
-    text: "I respond well when someone takes confident leadership.",
-    trait: "authority"
+    text: "Which feels more motivating?",
+    optionA: "Praise and approval",
+    optionB: "Rules and correction",
+    traitA: "validation",
+    traitB: "discipline"
   },
   {
-    text: "Clear roles make a dynamic feel more secure to me.",
-    trait: "authority"
+    text: "Which feels more exciting?",
+    optionA: "Psychological buildup and anticipation",
+    optionB: "Playful teasing and ego challenge",
+    traitA: "tension",
+    traitB: "ego"
   },
   {
-    text: "I feel more comfortable when someone else sets the tone or structure.",
-    trait: "authority"
-  },
-
-  {
-    text: "I enjoy doing things that make a partner feel valued.",
-    trait: "service"
+    text: "Which dynamic sounds better?",
+    optionA: "Clear expectations and defined roles",
+    optionB: "Warm appreciation and emotional reassurance",
+    traitA: "authority",
+    traitB: "validation"
   },
   {
-    text: "Helping or pleasing a partner can feel rewarding in itself.",
-    trait: "service"
+    text: "Which feels more natural to you?",
+    optionA: "Expressing care through acts of service",
+    optionB: "Being motivated by praise and recognition",
+    traitA: "service",
+    traitB: "validation"
   },
   {
-    text: "Acts of devotion feel meaningful to me.",
-    trait: "service"
+    text: "Which feels more compelling?",
+    optionA: "Accountability and standards",
+    optionB: "Delayed gratification and suspense",
+    traitA: "discipline",
+    traitB: "tension"
   },
   {
-    text: "I often show affection through effort and helpfulness.",
-    trait: "service"
-  },
-
-  {
-    text: "Praise strongly affects my motivation.",
-    trait: "validation"
+    text: "Which type of intensity is more appealing?",
+    optionA: "Structured rules and order",
+    optionB: "Psychological vulnerability and exposure",
+    traitA: "discipline",
+    traitB: "ego"
   },
   {
-    text: "Feeling appreciated matters a lot to me in close relationships.",
-    trait: "validation"
+    text: "Which would matter more in a dynamic?",
+    optionA: "Someone taking charge clearly",
+    optionB: "Someone keeping you wanting more",
+    traitA: "authority",
+    traitB: "tension"
   },
   {
-    text: "Compliments can stay with me for a long time.",
-    trait: "validation"
+    text: "Which feels more meaningful?",
+    optionA: "Earning approval and praise",
+    optionB: "Proving devotion through service",
+    traitA: "validation",
+    traitB: "service"
   },
   {
-    text: "Approval from someone I care about can feel intensely rewarding.",
-    trait: "validation"
-  },
-
-  {
-    text: "Rules can make a dynamic feel meaningful.",
-    trait: "discipline"
+    text: "Which sounds more appealing?",
+    optionA: "Being held to clear standards",
+    optionB: "Being playfully pushed out of your comfort zone",
+    traitA: "discipline",
+    traitB: "ego"
   },
   {
-    text: "Clear correction can help me improve when I trust the person giving it.",
-    trait: "discipline"
+    text: "Which feels more attractive?",
+    optionA: "A calm, authoritative presence",
+    optionB: "A playful, teasing presence",
+    traitA: "authority",
+    traitB: "ego"
   },
   {
-    text: "Structure often feels reassuring rather than restrictive.",
-    trait: "discipline"
+    text: "Which would be more satisfying?",
+    optionA: "Making someone proud of you",
+    optionB: "Making someone feel cared for through your actions",
+    traitA: "validation",
+    traitB: "service"
   },
   {
-    text: "Accountability can make a relationship dynamic feel deeper.",
-    trait: "discipline"
-  },
-
-  {
-    text: "Anticipation is often more exciting than immediate reward.",
-    trait: "tension"
+    text: "Which sounds more intense?",
+    optionA: "Waiting, wanting, and anticipation",
+    optionB: "Correction and consequences",
+    traitA: "tension",
+    traitB: "discipline"
   },
   {
-    text: "Waiting can intensify an experience for me.",
-    trait: "tension"
+    text: "Which kind of challenge appeals more?",
+    optionA: "Learning to follow clear direction",
+    optionB: "Handling teasing and emotional exposure",
+    traitA: "authority",
+    traitB: "ego"
   },
   {
-    text: "Psychological buildup matters a lot to me.",
-    trait: "tension"
+    text: "Which feels more rewarding?",
+    optionA: "Being useful and devoted",
+    optionB: "Being kept in suspense",
+    traitA: "service",
+    traitB: "tension"
   },
   {
-    text: "Delayed gratification can feel especially powerful.",
-    trait: "tension"
-  },
-
-  {
-    text: "Playful teasing usually doesn't bother me.",
-    trait: "ego"
+    text: "Which would draw you in more?",
+    optionA: "Someone who praises and affirms you",
+    optionB: "Someone who maintains strict standards",
+    traitA: "validation",
+    traitB: "discipline"
   },
   {
-    text: "I can handle being emotionally challenged in the right dynamic.",
-    trait: "ego"
+    text: "Which sounds more appealing overall?",
+    optionA: "Ceremony, structure, and hierarchy",
+    optionB: "Devotion, helpfulness, and care",
+    traitA: "authority",
+    traitB: "service"
   },
   {
-    text: "A little embarrassment can sometimes feel exciting rather than upsetting.",
-    trait: "ego"
+    text: "Which creates stronger chemistry for you?",
+    optionA: "Being kept guessing and wanting more",
+    optionB: "Being openly tested and challenged",
+    traitA: "tension",
+    traitB: "ego"
   },
   {
-    text: "I do not always need to feel composed or in control.",
-    trait: "ego"
+    text: "Which feels more powerful?",
+    optionA: "Approval from someone important to you",
+    optionB: "Knowing exactly what is expected of you",
+    traitA: "validation",
+    traitB: "authority"
   },
   {
-    text: "Psychological vulnerability can sometimes make an experience feel more intense.",
-    trait: "ego"
+    text: "Which dynamic feels more compelling?",
+    optionA: "Serving attentively and consistently",
+    optionB: "Responding to correction and accountability",
+    traitA: "service",
+    traitB: "discipline"
   }
 ];
 
