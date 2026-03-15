@@ -42,15 +42,10 @@ button:hover {
 <div id="quiz" style="display:none; margin-top:30px;">
   <h2 id="question"></h2>
 
-  <button id="optionA"
-          onclick="answerChoice('A')"
-          style="display:block;margin:12px auto;max-width:700px;white-space:normal;padding:14px;font-size:16px;">
-  </button>
-
-  <button id="optionB"
-          onclick="answerChoice('B')"
-          style="display:block;margin:12px auto;max-width:700px;white-space:normal;padding:14px;font-size:16px;">
-  </button>
+  <div id="choiceContainer">
+    <button id="optionA" class="choice-card" onclick="answerChoice('A')"></button>
+    <button id="optionB" class="choice-card" onclick="answerChoice('B')"></button>
+  </div>
 </div>
 
 <div id="results" style="display:none; margin-top:40px;">
