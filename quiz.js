@@ -347,13 +347,22 @@ function startQuiz() {
 
 function showQuestion() {
   const q = questions[currentQuestion];
+
   document.getElementById("question").innerText =
     "Question " + (currentQuestion + 1) + " / " + questions.length + " — " + q.text;
+
+  document.getElementById("optionA").innerText = q.optionA;
+  document.getElementById("optionB").innerText = q.optionB;
 }
 
-function answer(value) {
-  const trait = questions[currentQuestion].trait;
-  scores[trait] += value;
+function answerChoice(choice) {
+  const q = questions[currentQuestion];
+
+  if (choice === "A") {
+    scores[q.traitA] += 1;
+  } else {
+    scores[q.traitB] += 1;
+  }
 
   currentQuestion++;
 
@@ -374,7 +383,7 @@ function showResults() {
     let score = 0;
 
     for (let trait in scores) {
-      let normalized = scores[trait] / 5;
+      let normalized = scores[trait] / 2;
       score += Math.abs(normalized - a.traits[trait]);
     }
 
